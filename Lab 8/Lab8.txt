@@ -1,0 +1,92 @@
+VERIFICARE DISPONIBILITATE
+
+Flux principal:
+1. Initiere verificare disponibilitate
+Sistemul începe procesul de verificare a disponibilității pentru vehiculul ales de client, ținând cont de preferințele introduse (tip vehicul, oficiu, perioadă de închiriere).
+
+2. Căutare interval disponibil
+Sistemul consultă baza de date pentru a verifica dacă vehiculul este disponibil în perioada solicitată.
+
+3. Confirmare disponibilitate
+Dacă vehiculul este disponibil, sistemul îl rezervă temporar.
+
+4. Continuarea procesului de rezervare
+Sistemul revine la fluxul principal pentru finalizarea rezervării și afișarea numărului de închiriere.
+
+Flux alternativ 1 – Vehicul indisponibil:
+- Dacă la pasul 3 vehiculul nu este disponibil:
+  - Sistemul afișează un mesaj de indisponibilitate.
+  - Clientul este redirecționat către introducerea unor noi preferințe.
+
+Excepții:
+- Toate vehiculele indisponibile pentru tipul selectat
+Dacă nu există vehicule disponibile pentru criteriile alese, sistemul generează automat un raport intern.
+
+
+INIȚIERE ÎNCHIRIERE
+
+Flux principal:
+1. Prezentare la oficiu
+Clientul se prezintă la sediu și furnizează numărul de rezervare.
+
+2. Căutare acord de închiriere
+Angajatul introduce numărul în sistem, iar sistemul afișează acordul de închiriere.
+
+3. Validare acord
+Angajatul verifică informațiile din acord împreună cu clientul.
+
+4. Tipărire și semnare acord
+Sistemul tipărește acordul, care este semnat de client.
+
+5. Selectare opțiune de asigurare
+Clientul alege una dintre opțiunile de asigurare disponibile.
+
+6. Tipărire poliță de asigurare
+Sistemul generează și tipărește polița, care este atașată la acordul de închiriere.
+
+Excepții:
+- Fără rezervare
+  - Angajatul introduce preferințele clientului.
+  - Sistemul verifică disponibilitatea vehiculului.
+  - Dacă există vehicule disponibile, procesul continuă cu afișarea prețului și restul procedurilor.
+
+- Vehicul rezervat indisponibil
+  - Clientul este rugat să selecteze alte preferințe.
+
+
+PROCESARE RETURNARE VEHICUL
+
+Flux principal:
+1. Înregistrare kilometraj și combustibil
+Angajatul înregistrează în sistem informațiile oferite de client privind kilometrajul și nivelul de combustibil.
+
+2. Calcul costuri
+Sistemul calculează cantitatea de combustibil consumată și costul final al închirierii.
+
+3. Afișare și verificare costuri
+Costul total este prezentat clientului pentru confirmare.
+
+4. Plată costuri
+Clientul achită suma datorată, iar angajatul înregistrează tranzacția în sistem.
+
+Excepții:
+- Vehicul avariat
+  - Angajatul notează daunele în sistem.
+  - Sistemul tipărește formularul de constatare a daunelor, care este completat și semnat de client.
+
+- Contestarea costurilor
+  - Angajatul înregistrează în sistem reclamația clientului.
+
+
+CREARE RAPOARTE MANAGEMENT
+
+Flux principal:
+1. Selectare tip raport
+Managerul alege tipul de raport dorit din lista de opțiuni.
+
+2. Generare raport
+Sistemul creează și afișează raportul solicitat.
+
+3. Tipărire raport (extindere pas Generare raport)
+Dacă este necesar, sistemul permite tipărirea raportului generat.
+

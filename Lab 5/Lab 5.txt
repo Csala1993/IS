@@ -1,0 +1,38 @@
+Clasele sunt : Student , Inscriere , Seminar si Profesor  
+  Student
+        Atribute: nume, nrTelefon, mediaNotelor, IDstudent, email, adresa
+       	Metode:
+            esteEligibilInscriere(): verifică dacă studentul este eligibil pentru înscriere
+            getSeminariiAlese(): returnează lista seminariilor alese
+    Inscriere
+        Atribute: notePrimite
+        Metode:
+            getMediaLaZi(): calculează media notelor curente
+            getNotaFinala(): returnează nota finală
+    Seminar
+
+        Atribute: nume, IDseminar, taxe
+        Metode:
+            addStudent(): adaugă un student la seminar
+            dropStudent(): elimină un student din seminar
+
+    Profesor
+
+        Atribute: nume, adresa, nrTelefon, email, salar
+
+Relații între clase:
+    Student - Inscriere
+
+        Relație 1 la 1: Fiecare student este înscris printr-un obiect de tip Inscriere.
+        Un student are o singură înscriere care îi înregistrează notele primite.
+
+    Student - Seminar
+
+        Relație de tip 0..* (mulți-la-mulți, dar include și o listă de așteptare).
+        Un student poate fi înscris la mai multe seminarii, iar un seminar poate avea mai mulți studenți.
+        Un student poate fi pe lista de așteptare pentru seminarii.
+
+    Profesor - Seminar
+
+        Relație 0..1 la 0..*
+        Un profesor poate preda mai multe seminarii, dar un seminar poate avea cel mult un profesor.

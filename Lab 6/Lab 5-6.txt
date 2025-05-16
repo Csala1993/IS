@@ -1,0 +1,87 @@
+1.	
+ 	a) fals , deoarece Produs nu este o clasa ci o interfata
+        b) Fals, deoarece o interfata nu poate fi inclusa in superfata
+        c) Fals Produs este clasa nu interfata
+        d)  corect
+        e) Fals, deoarece relatia de compoziție este inversa: Carte contine Capitol, nu Capitol contine Carte.
+2.
+        a) Gresit , deoarece  Produs este o interfață, iar în Java o clasă nu poate moșteni o interfață.
+        b) Gresit , deoarce in Java o interfata nu poate implementa o clasa 
+        c) Este corect deoarece implementeaza relatia de compozitie
+        d) Nu e corect deoarece trebuie sa aiba o implementare pentru functia specificata
+        e) Protected e notat cu #
+        f) Corect
+        g) Nu e corect
+3.
+        a) Corect 
+        b) Sintactic gresit
+        c) Corect
+        d) Incorect e privat
+        e) Nu e corect doarece nu se specifica return type int
+        f) Nu e corect deoarece e agregare nu generalizare
+        g) Corect
+        h) Cand e compozitie trebuie sa fie mai multe diagramaUML
+4.
+        a) incorect e invers
+        b) corect
+        c) Incorect , e atribut privat
+        d) Corect
+        e) Fals , este metoda publica
+        f) Adevarat
+5.
+Proferor materie asociere unidirectionala
+        a) Incorect extends e pentru generalizare
+        b) Corect nu conteaza
+        c) Nu e corect deoarece e unidirectional
+6.
+        a) Corect
+        b) Incorect , este asociere unidimensionala
+        c) Corect
+        d) Incorect , intre materie si lab e relatie de compozitie
+        e) Corect
+7.
+        a) Incorect , nu e relatie de generelazire
+        b) Incorect , nu e relatie de generalizare
+        c) Corect deoarece compozitie + initializare
+        d) Incorect e asociere
+        e) Incorect e agregare deoarece nu a fost initializat
+8.
+        a) Incorect , e compozitie
+        b) Incorect , e compozitie
+        c) Incorect , nu e superclasa , deoarece e relatie de compozitie nu mostenire
+        d) Corect
+        e) Incorect , clasele nu mostenesc clasa materie
+9.
+        a) Incorect e interfata produs
+        b) Corect
+        c) Incorect sintactic
+        d) Incorect nu apare implementarea
+        e) Corect
+        f) Incorect , pret e atribut nu metoda
+        g) Corect
+        h) Incorect nu avem tipul produs, ar trebui sa fie void
+        i) Corect
+10.
+Ce este scris italic este functie abstracta
+        a) Incorect deoarece daca avem o metoda abstracta  trebuie sa fie si clasa abstracta
+        b) Corect
+        c) Incorect in clasele abstracte nu se implementeaza functia
+        d) Incorect deoarece nu se specifica functia abstracta
+11.
+        a) Bun
+        b) Incorect , deoarece este relatie de mostenire nu de realizare
+        c) Incorect nu are implementare
+        d) Corect dar trebuia sa fie void tipul 
+Metoda trebuie sa fie abstracta doar in clasa abstracta nu si in clasa care implementeaza
+12.
+        a) Incorect , deoarece intre clase nu se afla relatie de mostenire ci de asociere unidimensionala
+        b) Incorect
+        c) Corect
+        d) Corect avem asociere
+        e) Nu e static
+13.
+        a) Incorect , clasa Proiect defineste un agregat de tip Student si compozitii de tip RaportTestare si DiagrameUML
+        b) Incorect deoarece avem agregare intre student si proiect
+        c) Corect
+        d) Incorect , deoarece intre Proiect si Student se afla o relatie de tip agregare , iar intre Proiect si RaportTestare si DiagrameUML este relatie de compozitie
+        e) Corect

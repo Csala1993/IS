@@ -1,0 +1,17 @@
+(1) Identificarea conceptelor : Profesor , Student , Secretara , Nota , RaportNote , Autentificare
+(2) Promovarea conceptelor ca clase in diagrama de clase : Toate conceptele identificate vor deveni clase in diagrama.
+(3) Specializari si generelizari : Student are un tip : student cu taxa => Superclasa : Student , Subclasa : StudentCuTaxa. Profesor, Secretara , Student pot fi specializari ale unei clase generale : UtilizatorAutentificat.
+(4) Colectii de acelasi tip : Un profesor genstioneaza mai multe Note. Notele pot fi grupate intr-o colectie. Un RaportNote contine o colectie de Note.
+(5) Proprietati semnificative :
+Profesor: nume, id , listaNote
+Student : nume, id , listaNote, tipStudent
+Nota:valoare , data , materie, profesor , student
+Secretara : nume , id
+RaportNote: listaNote, format, dataGenerare
+
+(6-7) Conexiuni si asocieri:
+Profesor - poate inregista/actualiza note
+Student, Profesor, Secretara - pot vizualiza Nota
+Nota-asociata cu Student si Profesor
+Secretara - genereaza RaportNote
+Profesor - distribuie RaportNote

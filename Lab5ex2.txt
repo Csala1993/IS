@@ -1,0 +1,115 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class AtributeComune {
+    private String titlu;
+    private int numar;
+
+    public AtributeComune(String titlu, int numar) {
+        this.titlu = titlu;
+        this.numar = numar;
+    }
+
+    public String getTitlu() {
+        return titlu;
+    }
+
+    public void setTitlu(String titlu) {
+        this.titlu = titlu;
+    }
+
+    public int getNumar() {
+        return numar;
+    }
+
+    public void setNumar(int numar) {
+        this.numar = numar;
+    }
+}
+
+
+class Sectiuni extends AtributeComune {
+    public Sectiuni(String titlu, int numar) {
+        super(titlu, numar);
+    }
+}
+
+
+class Capitole extends AtributeComune {
+    private String rezumat;
+    private List<Sectiuni> sectiuni;
+
+    public Capitole(String titlu, int numar, String rezumat) {
+        super(titlu, numar);
+        this.rezumat = rezumat;
+        this.sectiuni = new ArrayList<>();
+    }
+
+    public String getRezumat() {
+        return rezumat;
+    }
+
+    public void setRezumat(String rezumat) {
+        this.rezumat = rezumat;
+    }
+
+    public void adaugaSectiune(Sectiuni sectiune) {
+        this.sectiuni.add(sectiune);
+    }
+}
+
+
+class Parti extends AtributeComune {
+    private List<Capitole> capitole;
+
+    public Parti(String titlu, int numar) {
+        super(titlu, numar);
+        this.capitole = new ArrayList<>();
+    }
+
+    public void adaugaCapitol(Capitole capitol) {
+        this.capitole.add(capitol);
+    }
+}
+
+class Carte {
+    private String editor;
+    private String dataDePublicare;
+    private String ISBN;
+    private List<Parti> parti;
+
+    public Carte(String editor, String dataDePublicare, String ISBN) {
+        this.editor = editor;
+        this.dataDePublicare = dataDePublicare;
+        this.ISBN = ISBN;
+        this.parti = new ArrayList<>();
+    }
+
+    public String getEditor() {
+        return editor;
+    }
+
+    public void setEditor(String editor) {
+        this.editor = editor;
+    }
+
+    public String getDataDePublicare() {
+        return dataDePublicare;
+    }
+
+    public void setDataDePublicare(String dataDePublicare) {
+        this.dataDePublicare = dataDePublicare;
+    }
+
+    public String getISBN() {
+        return ISBN;
+    }
+
+    public void setISBN(String ISBN) {
+        this.ISBN = ISBN;
+    }
+
+    public void adaugaParti(Parti parte) {
+        this.parti.add(parte);
+    }
+}
